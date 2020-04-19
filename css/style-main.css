@@ -231,6 +231,133 @@ header {
         overflow: hidden;
     
     }
+
+
+    /*Start Overlay  */
+    /*Start  Overlay */
+#overlay {
+    position: fixed;
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(125, 115, 115, 0.43);
+    z-index: 2;
+    }
+    
+    .overlay-cont .posting{
+    height: 75px;
+    }
+    
+    .overlay-cont{
+    width: 40%;
+    background: #fff;
+    border: 1px solid #d8d8d39c;
+    border-radius: 4px;
+    margin-left: 30%;
+    margin-top: 7%;
+    }
+    
+    .overlay-cont .top{
+    cursor:pointer;
+    }
+    .overlay-cont .top h6{
+    background: #d2d0d087;
+    height: 40px;
+    padding: 7px;
+    text-align: left;
+    padding-left: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #24292D;
+    margin-bottom: 0;
+    }
+    
+    .overlay-cont img{
+    display: inline-block;
+    }
+    
+    .overlay-cont p{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 5px;
+    color: #2c2f2f;
+    }
+    /* case info */
+    .overlay-cont .case-info h5{
+    text-align: left;
+    border-top: 1px solid #cecbc84d;
+    border-bottom: 1px solid #cecbc84d;
+    padding: 4px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    }
+    
+    .case-info .choose {
+    text-align: left;
+    padding-left: 22px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+    margin-top: 15px;
+    }
+    
+    .info .row .col-6 h6 {
+    height: 35px;
+    padding: 7px;
+    text-align: left;
+    padding-left: 7px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #24292D;
+    margin-bottom: 7px;
+    margin-top: 13px;
+    font-size: 16px;
+    }
+    
+    .info input {
+    background: #dcdada36;
+    border:none;
+    }
+    
+    .info .dropdown1 .btn::after{
+    margin-left: 6.255em;
+    }
+    
+    .dropdown1 .dropdown-toggle{
+    width: 100%;
+    text-align: center;
+    background: #dcdada36;
+    border: none;
+    color: #00000085;
+    margin-bottom: 10px;
+    }
+    /* drag img */
+    .image h6{
+    text-align:left;
+    margin-left:20px;
+    }
+    
+    .image p{
+    display:block;
+    margin-top: 10%;
+    }
+    .image .drag-img{
+    width:94%;
+    height: 100px;
+    margin-left:3%;
+    border:1px dashed #d2d0d0e6;
+    border-radius: 4px;
+    }
+    
+    /* End Overlay */
+    /*Start Overlay  */
+
+
 /* End post a case */
 
 

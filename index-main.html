@@ -77,11 +77,87 @@
                   </div>
                   <div class="write">
                     <img src="img/avatar.png" alt="post photo" class="write__img">
-                    <input type="text" class="write__post" placeholder="Write Something...">
+                    <input type="text" class="write__post" placeholder="Write Something..." onclick="on();">
                   </div>
                 </div>
               </div>
-             
+             <!--  Overlay -->
+             <div id="overlay">
+              <div class="baba">
+              <div class="overlay-cont">
+                <div class="top"  onclick="off()">
+                <h6>Post a Case</h6>
+                </div>
+              <div class="posting" >
+                <a href="#"><img src="img/avatar.png" alt="Avatar"/></a>
+                <p>write Something..</p>
+              </div>
+               <!-- case info -->
+              <div class="case-info">
+                <h5>Case Info </h5>
+                <div class="choose">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">Lost</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline" style="margin-left: 20%;">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">Found</label>
+                  </div>
+                </div>
+                <!-- Info details -->
+                <div class="info">
+                  <div class="row">
+          
+                    <div class="col-6">
+                    <h6>First Name</h6>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" aria-label="Default" placeholder="ex: Amal" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <h6>Age</h6>
+                    <div class="dropdown1">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select a Year
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here</button>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="col-6">
+                    <h6>Last Name</h6>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" aria-label="Default" placeholder="ex: Salah" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <h6>Gender</h6>
+                    <div class="dropdown1">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select aType
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button">Male</button>
+                      <button class="dropdown-item" type="button">Female</button>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  <!--Drag Img  -->
+                  <div class="image">
+                    <h6>Place an Image</h6>
+                    <div class="drag-img">
+                      <p>Drag & Drop </p>
+                      <p><a href="#">Select From Files</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+             <!--  Overlay -->
             </div>
           </div>
         <!-- End post a case -->
@@ -325,7 +401,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="js/main.js"></script>  
     <!-- IonIcons -->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <!-- IonIcons -->
