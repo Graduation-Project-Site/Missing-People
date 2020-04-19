@@ -5,7 +5,7 @@
     --inputs: #F5F6F7;
     --text-color: #24292D;
     --links-color: #818F99;
-    --brand-color: #50B0E5;
+    --brand-color: #1271A6;
 }
 
 /* Global Style */
@@ -53,7 +53,7 @@ h1,h2,h3,h4,h5,button {
 }
 
 .btn-blue {
-    background-color: #1271A6;
+    background-color: var(--brand-color);
     color: white;
     border-radius: 2px;
     font-weight: 600;
@@ -131,6 +131,11 @@ header {
     border: none;
 }
 
+.icon {
+    font-size: 20px;
+    color: var(--links-color);
+}
+
 .search__icon {
     background-color: #F5F6F7;
     color: grey;
@@ -161,7 +166,7 @@ header {
     color:#818F99;
 }
 .user-nav__home a {
-    color:#50B0E5;
+    color: var(--brand-color);
 }
 
 .user-nav__pic {
@@ -338,7 +343,7 @@ header {
     color:  #24292D;
 }
 .post-details__btn {
-    background-color: #50B0E5;
+    background-color: var(--brand-color);
     color: white;
     padding: 8px 22px;
     font-size: 16px;
@@ -365,7 +370,7 @@ header {
 }
 .filters-base__btn {
     background-color:white;
-    color:  #50B0E5;
+    color:  var(--brand-color);
     padding: 8px 22px;
     font-size: 16px;
     letter-spacing: 1.2;

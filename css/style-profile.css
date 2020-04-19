@@ -5,7 +5,7 @@
     --inputs: #F5F6F7;
     --text-color: #24292D;
     --links-color: #818F99;
-    --brand-color: #50B0E5;
+    --brand-color: #1271A6;
 }
 
 /* Global Style */
@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,button {
     font-size: 15px;
     line-height: 20px;
     font-weight: 300;
-    color: #818F99;
+    color: var(--links-color);
     margin-bottom: 0;
 }
 .heading-4 {
@@ -53,7 +53,7 @@ h1,h2,h3,h4,h5,button {
 }
 
 .btn-blue {
-    background-color: #1271A6;
+    background-color: var(--brand-color);
     color: white;
     border-radius: 2px;
     font-weight: 600;
@@ -104,7 +104,7 @@ header {
     outline: none;
     border-radius: 3px;
     background-color:#F5F6F7;
-    color: #818F99;
+    color: var(--links-color);
 
     width: 525px ; 
     height: 40px;
@@ -119,7 +119,7 @@ header {
 
 .search__input::placeholder {
 
-    color: #818F99;
+    color: var(--links-color);
 }
 
 .search__button {
@@ -130,6 +130,11 @@ header {
     left:13px;
    
     border: none;
+}
+
+.icon {
+    font-size: 20px;
+    color: var(--links-color);
 }
 
 .search__icon {
@@ -159,10 +164,10 @@ header {
 
 .user-nav a {
     text-decoration: none;
-    color:#818F99;
+    color:var(--links-color);
 }
 .user-nav__home a {
-    color:#50B0E5;
+    color: var(--brand-color);
 }
 
 .user-nav__pic {
@@ -207,7 +212,7 @@ header {
     font-size: 16px;
 }
 .profile-edit .profile-edit-profile {
-    color: #1271A6;
+    color: var(--brand-color);
 }
 
 .profile-info {
@@ -308,7 +313,7 @@ header {
         padding-left: 70px;
         background-color: white !important;    
         outline: none;
-        color: #818F99 ;
+        color: var(--links-color) ;
         overflow: hidden;
     
     }
@@ -394,7 +399,7 @@ header {
     color:  #24292D;
 }
 .post-details__btn {
-    background-color: #50B0E5;
+    background-color: var(--brand-color);
     color: white;
     padding: 8px 22px;
     font-size: 16px;

@@ -5,7 +5,7 @@
     --inputs: #F5F6F7;
     --text-color: #24292D;
     --links-color: #818F99;
-    --brand-color: #50B0E5;
+    --brand-color: #1271A6;
 }
 
 /* Global Style */
@@ -111,6 +111,11 @@ header {
     border: none;
 }
 
+.icon {
+    font-size: 20px;
+    color: var(--links-color);
+}
+
 .search__icon {
     background-color: #F5F6F7;
     color: grey;
@@ -141,7 +146,7 @@ header {
     color:#818F99;
 }
 .user-nav__home a {
-    color:#50B0E5;
+    color: var(--brand-color);
 }
 
 .user-nav__pic {
@@ -321,7 +326,7 @@ header {
 }
 
 .btn-blue {
-    background-color: #1271A6;
+    background-color: var(--brand-color);
     color: white;
     border-radius: 2px;
     font-weight: 600;
