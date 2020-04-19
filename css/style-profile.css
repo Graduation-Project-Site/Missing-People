@@ -1,0 +1,406 @@
+/* Colors */
+:root {
+
+    --background: #FAFAFA;
+    --inputs: #F5F6F7;
+    --text-color: #24292D;
+    --links-color: #818F99;
+    --brand-color: #50B0E5;
+}
+
+/* Global Style */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+    height: 1200px
+}
+
+h1,h2,h3,h4,h5,button {
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
+
+/* Some basic things */
+.heading-3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #24292D;
+    margin-bottom: 0;
+    
+}
+.paragraph-1 {
+    padding: 0px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #818F99;
+    margin-bottom: 0;
+}
+.heading-4 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+.btn-blue {
+    background-color: #1271A6;
+    color: white;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.btn-click {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+}
+.btn-click:active ,
+.btn-click:focus {
+    outline: none;
+}
+
+/* Global Style */
+
+
+/* Start Header */
+
+header {
+
+    height: 70px ;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.navbar {      
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.search {     
+
+    position: relative;
+
+}
+.search__input {
+    
+    border:none;
+    outline: none;
+    border-radius: 3px;
+    background-color:#F5F6F7;
+    color: #818F99;
+
+    width: 525px ; 
+    height: 40px;
+    padding: 0px 45px  ;
+    margin: 7px 0;
+    
+    position: relative;
+
+    margin-right: 10px;  /* For space with nav user */
+
+}
+
+.search__input::placeholder {
+
+    color: #818F99;
+}
+
+.search__button {
+
+    background:none;
+    position: absolute;
+    top:17px;
+    left:13px;
+   
+    border: none;
+}
+
+.search__icon {
+    background-color: #F5F6F7;
+    color: grey;
+}
+/* .search__input:active,   // just in case want to add any css when the button is avtive or focused
+.search__input:focus {
+
+    outline: 1px solid #50B0E5;
+} */
+.search__icon {
+    background-color: #F5F6F7;
+    color: grey;
+}
+
+.user-nav {
+
+    flex-basis: 25%;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.user-nav a {
+    text-decoration: none;
+    color:#818F99;
+}
+.user-nav__home a {
+    color:#50B0E5;
+}
+
+.user-nav__pic {
+    margin-left: 15px;
+}
+
+/* End Header */
+
+/* Start profile */
+
+.profile{
+    height: 225px;
+    width: 900px;
+    margin: 30px auto 20px;
+    border: 1px solid rgba(245, 246, 247, 0.904);
+
+    position: relative;
+}
+
+.profile-base {
+    background-image: linear-gradient(to right , #F5F6F7, #F5F6F7 );
+    background-size: cover;
+    height: 180px ;
+
+}
+.profile-edit {
+    background-color: white;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+.profile-edit button {
+    background-color: white;
+    color: #24292D;
+    height: 100%;
+    outline: none;
+    padding: 12px 18px;
+    border: 1px solid #F5F6F7;
+    border-bottom: none;
+    border-top: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+.profile-edit .profile-edit-profile {
+    color: #1271A6;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding:  0 15px ;
+    width: 100%;
+
+    position: absolute;
+    top: 85px;
+    left: 0;
+}
+
+.profile-info h3 {
+    padding: 0 15px ;
+    margin-right: auto;
+}
+.profile-info button {
+    padding: 10px 15px;
+}
+
+/* End profile */
+
+
+
+
+/* start profile 2 */
+
+.profile-2 {
+    width: 900px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.profile-2-about {
+    width: 305px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid#F5F6F7;
+
+}
+
+.profile-2-about-header {
+    background-color: #F5F6F7;
+    height: 40px;
+    position: relative;
+}
+.profile-2-about-header h3 {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+}
+
+
+
+.profile-2-feed {
+    width: 565px;
+}
+
+.post-case {
+   
+    margin-bottom: 10px;
+    border: 1px solid#F5F6F7;
+    border-radius: 4px;
+    
+    }
+    .post-case .heading {
+        background-color:  #F5F6F7;
+        height: 40px;
+        position: relative;
+
+    }
+    .heading h3 {
+        position: absolute;
+        top: 7px;
+        left: 15px;
+    }
+    
+    .write {
+        background-color: white;
+        height: 90px;
+        position: relative;
+        
+    }
+    .write__img {
+        display: inline;
+        position: absolute;
+        top: 25px;
+        left: 15px;
+    }
+    .post-case  .write__post {
+        border:none;
+        width: 100%;
+        height: 100%;
+        padding-left: 70px;
+        background-color: white !important;    
+        outline: none;
+        color: #818F99 ;
+        overflow: hidden;
+    
+    }
+
+
+
+/* End profile 2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.posts-1 {
+       
+    background-color: white;
+    border: 1px solid#F5F6F7;
+    border-radius: 3px;
+}
+
+
+    
+.post .post-nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding:10px 15px
+} 
+
+.post-nav__info {
+    margin-right: auto;
+    padding: 0 15px;
+}
+.post-nav__info span {
+    font-size: 12px;
+    color: #818F99;
+}
+.post-nav i {
+    color: hsla(205, 11%, 55%, 0.5);
+    font-size: 24px;
+    transform: translateY(-5px);
+}
+.post-info {
+    padding:10px 15px;
+    border-bottom: 1px solid  rgba(129, 143, 153, 0.25);
+}
+.post-info .paragraph {
+    color: #818F99;
+    padding:0px 5px;
+}
+.post-info__pics {
+    display: flex;
+    margin-bottom: 5px;
+}
+.post-info__pics img {
+    background-color:white;
+    margin: 0 1px;
+    width: 33.33%
+}
+.post-details {
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+}
+.post-details h3 {
+    font-size: 14px;
+    color:  #818F99;
+    text-transform:uppercase ;
+}
+.post-details span {
+    
+    font-size: 12px;
+    color:  #24292D;
+}
+.post-details__btn {
+    background-color: #50B0E5;
+    color: white;
+    padding: 8px 22px;
+    font-size: 16px;
+    letter-spacing: 1.2;
+    border:none;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
