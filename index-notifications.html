@@ -13,7 +13,7 @@
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="css/style-notifications-2.css">
-    <link rel="stylesheet" href="css/nav-old.css">
+    <link rel="stylesheet" href="css/nav-new.css">
 
 
     <!-- For ICONS  -->
@@ -26,37 +26,48 @@
 
       <div id="wrapper">
 
-        <!-- Start Header  OLD ONE -->
-        <header id="header">
-          <div class="container">
-            <nav class="navbar">
-              <div class="logo">
-                <img src="img/logo.png" alt="#" class="logo__icon">
+        <!-- Start Header -->
+      <header id="header">
+        <div class="container">
+          <nav class="navbar">
+            <div class="logo">
+              <img src="img/logo.png" alt="#" class="logo__icon">
+            </div>
+            <form action="#" class="search">
+              <div class="search__one">
+                <input type="text" class="search__input" placeholder="Search by keywords">
+                <select class="search__select search__select-1 ">
+                  <option> Location </option>
+                  <option>2</option>
+                </select>
+                <select class="search__select search__select-2 ">
+                  <option> Gender </option>
+                  <option>2</option>
+                </select>
+                <button class="search__button">
+                  <i data-feather="search" ></i>
+                </button>  
               </div>
-              <form action="#" class="search">
-                <input type="text" class="search__input" placeholder="Search cases">
-                <button class="search__button btn-for-icon">
-                  <i data-feather="search"></i>
-                </button>
-              </form>
-              <div class="user-nav">
-                  <div class="user-nav__home">
-                   <a href="#" class="home"> Home</a>
-                  </div>
-                  <div class="user-nav__msg">
-                    <a href="#" class="msg"> Message</a>
-                  </div>
-                  <div class="user-nav__not">
-                    <a href="#" class="not">Notification </a>
-                  </div>
-              </div>
-              <div class="user-nav__pic">
-                <img src="img/avatar.png" alt="user photo" class="user-nav__img">
-              </div>
-            </nav>
-          </div>
-        </header>
-        <!-- End header -->
+              <button class="search__button-blue"> Search </button>
+            </form>
+            <div class="user-nav">
+                <div class="user-nav__home">
+                  <a href="#" class="home"> <i data-feather="home" ></i> </a> 
+                </div>
+                <div class="user-nav__msg">
+                  <a href="#" class="msg">  <i data-feather="mail"></i></a>
+                </div>
+                <div class="user-nav__not">
+                  <a href="#" class="not">  <i data-feather="bell"></i> </a>
+                </div>
+                <div class="user-nav__pic">
+                  <img src="img/avatar.png" alt="user photo" class="user-nav__img">
+                </div> 
+            </div>           
+          </nav>
+        </div>
+      </header>
+      <!-- End header -->
 
 
       <!-- Sttart Notifications box  -->

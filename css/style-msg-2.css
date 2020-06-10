@@ -1,4 +1,8 @@
 /* Start Messages */
+.messages {
+    padding: 60px 0;
+}
+
 .all {
     height: 647px;
     width: 100%;
