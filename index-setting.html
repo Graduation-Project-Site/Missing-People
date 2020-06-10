@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style-setting-2.css">
+    <link rel="stylesheet" href="css/nav-old.css">
+
+
+    <!-- For ICONS  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Setting</title>
+    </head>
+    <body>
+
+
+      <div id="wrapper">
+
+        <!-- Start Header OLD ONE -->
+        <header id="header">
+          <div class="container">
+            <nav class="navbar">
+              <div class="logo">
+                <img src="img/logo.png" alt="#" class="logo__icon">
+              </div>
+              <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Search cases">
+                <button class="search__button">
+                  <i data-feather="search" ></i>
+                </button>
+              </form>
+              <div class="user-nav">
+                  <div class="user-nav__home">
+                   <a href="#" class="home"> Home</a>
+                  </div>
+                  <div class="user-nav__msg">
+                    <a href="#" class="msg"> Message</a>
+                  </div>
+                  <div class="user-nav__not">
+                    <a href="#" class="not">Notification </a>
+                  </div>
+              </div>
+              <div class="user-nav__pic">
+                <img src="img/avatar.png" alt="user photo" class="user-nav__img">
+              </div>
+            </nav>
+          </div>
+        </header>
+          <!-- End header -->
+
+        <!-- Start setting box -->
+
+        <div class="container">
+          <div class="setting-box">
+
+            <div class="Set-Title">
+              <h3 heading-3 >Setting</h3 >
+            </div>
+
+
+            <div class="set-body">
+
+              <!-- Tab links -->
+              <div class="tab">
+                <button class="tablinks" onclick="openLink(event, 'profile')" id="defaultOpen">Profile</button>
+                <button class="tablinks" onclick="openLink(event, 'account')">Account</button>
+                <button class="tablinks" onclick="openLink(event, 'notification')">Notification</button>
+              </div>
+
+              <!-- Tab content -->
+              <!-- Start profile -->
+              <div id="profile" class="tabcontent profile">
+                <div class="profile-change-photo">
+                  <img src="img/avatar2.png"/>
+                  <div clas="middle">
+                    <a href="#">Change<br> Profile Photo</a>
+                  </div>
+                </div>
+
+                <div class="profile-info">
+                  <div class="first-name">
+                    <h3 class="heading-3">First name</h3>
+                    <input type="text" class="inputs" placeholder="ex: Muhammad">
+                  </div>
+                  <div class="profile-info-space"></div>
+                  <div class="last-name">
+                    <h3 class="heading-3">last name</h3>
+                    <input type="text" class="inputs" placeholder="ex: El-Ekrady">
+                  </div>
+                </div>
+                <div class="submit">
+                  <div class="left">
+                    <button class="btn-blue">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Start Account -->
+              <div id="account" class="tabcontent account">               
+                <div class="input">
+                  <div class="row">
+
+                    <div class="col-4">
+                      <h3 class="heading-3">Username</h3>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Default" placeholder="@username" aria-describedby="inputGroup-sizing-default">
+                      </div>
+                      <h3 class="heading-3">E-mail</h6>
+                      <div class="input-group mb-3">
+                        <input type="email" class="form-control" aria-label="Default" placeholder="email@gmail.com" aria-describedby="inputGroup-sizing-default">
+                      </div>
+                    </div>
+
+                    <div class="col-8">
+                      <h3 class="heading-3">Password</h3>
+                      <div class="input-group mb-3">
+                        <input type="password" class="form-control" aria-label="Default" placeholder="**********" aria-describedby="inputGroup-sizing-default">
+                      </div>
+                      <h3 class="heading-3">Phone</h3>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Default" placeholder="5555-555-5555" aria-describedby="inputGroup-sizing-default">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="submit">
+                    <div class="left">
+                      <button class="btn-blue">Save Changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Start notification -->
+              <div id="notification" class="tabcontent notifacation">
+                <h3>Notification</h3>
+                <div class="submit">
+                  <div class="left">
+                    <button class="btn-blue">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+              
+
+              
+            </div>
+
+          </div>
+        </div>
+
+        <!-- End setting box -->
+
+
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script> feather.replace() </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"> </script>
+    <script src="js/main-setting.js"></script>
+
+    </body>
+</html>

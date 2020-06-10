@@ -1,0 +1,271 @@
+/* Start post a case */
+
+.base-post {
+    width:550px;
+    margin: 30px auto;
+    height: 140px;
+}
+.post-case {
+   
+    border: 1px solid#F5F6F7;
+    border-radius: 4px;
+}
+    .post-case .heading {
+        background-color:  #F5F6F7;
+        height: 40px;
+        position: relative;
+    }
+    .heading h3 {
+        position: absolute;
+        top: 7px;
+        left: 15px;
+    }
+    .btn-click {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: none;
+    }
+    .btn-click:active ,
+    .btn-click:focus {
+        outline: none;
+    }
+    .write {
+        background-color: white;
+        height: 90px;
+        position: relative;
+        
+    }
+    .write__img {
+        display: inline;
+        position: absolute;
+        top: 25px;
+        left: 15px;
+    }
+    .post-case  .write__post {
+        border:none;
+        width: 100%;
+        height: 100%;
+        padding-left: 70px;
+        background-color: white !important;    
+        outline: none;
+        color: #818F99 ;
+        overflow: hidden;
+    
+    }
+/* End post a case */
+
+
+/* Start base 2 */
+.base-2 .container {
+    padding: 0;
+}
+.base-2-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/* start aside one */
+.cases-found {
+  flex-basis: 23.5%;
+}
+.cases-found h3 {
+    margin-bottom: 15px;
+}
+.cases-found-list {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    align-items: center;
+    justify-items: center;
+
+    row-gap: 10px;
+    column-gap: 10px;
+
+    background-color:white ;
+    border: 1px solid #EDEDED ;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.cases-found .case-base {
+    margin-bottom: 25px ;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.cases-found__links .case {
+    display: block;
+    margin-bottom: 5px;
+    
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* End aside one */
+
+/* start main Posts */
+
+.posts {
+   
+    margin-bottom: 20px;
+    flex-basis: 59%;
+    max-width: 550px;
+     
+}
+.posts-1 ,
+.posts-2 ,
+.posts-3 {
+    background-color: white;
+    border: 1px solid  rgba(129, 143, 153, 0.25) ;
+    border-radius: 3px;
+   
+    margin-bottom: 20px;
+}
+
+.post .post-nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding:10px 15px
+} 
+
+.post-nav__info {
+    margin-right: auto;
+    padding:0 15px;
+
+}
+.post-nav__info span {
+    font-size: 12px;
+    color: #818F99;
+}
+.post-nav-btn {
+    background: none ;
+    border: none;
+    outline: none;
+
+    margin-top: -10px;
+    margin-right: -10px;
+}
+.post-nav-btn:active, 
+.post-nav-btn:focus {
+    border: none;
+    outline: none;
+}
+.post-nav-btn i {
+    color: hsla(205, 11%, 55%, 0.5);
+    stroke-width:2.5px ;
+    size: 36px;
+}
+.post-info {
+    padding:10px 15px;
+    border-bottom: 1px solid  rgba(129, 143, 153, 0.25);
+}
+.post-info .paragraph {
+    color: #818F99;
+    padding:0px 5px;
+}
+.post-info__pics {
+    display: flex;
+    margin-bottom: 5px;
+}
+.post-info__pics img {
+    background-color:white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    margin: 1px;
+    width: 33.33%
+}
+
+
+.post-details {
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+}
+.post-details h3 {
+    font-size: 14px;
+    color:  #818F99;
+    text-transform:uppercase ;
+}
+.post-details span {
+    font-size: 12px;
+    color:  #24292D;
+}
+.post-details__btn {
+    background-color: #50B0E5;
+    color: white;
+    padding: 8px 22px;
+    font-size: 16px;
+    letter-spacing: 1.2;
+    border:none;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+/* End main Posts */
+
+/* Start aside Filter */
+
+.filters {
+   flex-basis: 23.5%;
+}
+
+.filters-base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+.filters-base__btn {
+    background-color:white;
+    color:  #50B0E5;
+    padding: 8px 22px;
+    font-size: 16px;
+    letter-spacing: 1.2;
+    border:none;
+    border-radius: 2px;
+}
+.filters h3 {
+    margin-bottom: 10px;
+}
+.filters select {
+    padding: 10px 13px ;
+    width:100% ;
+    border:none;
+    background-color:  #F5F6F7;
+    outline: none;
+    position: relative;
+    border-radius: 3px;
+    color: #818F99 ;
+
+    margin-bottom: 15px;
+    
+}
+.filters-base-age,
+.filters-base-date,
+.filters-base-loc  {
+    margin-bottom: 10px;
+}
+.filters-base-gender .male {
+margin-bottom: 10px;
+}
+.filters-base-gender span {
+margin-left: 10px;
+}
+
+
+/* End aside Filter */
+
+
+
+/* End base 2 */
+

@@ -11,36 +11,34 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link rel="stylesheet" href="css/all.min.css" >
-
     <!-- Custom Css -->
-    <link rel="stylesheet" href="css/style-profile.css">
+    <link rel="stylesheet" href="css/style-profile-2.css">
+    <link rel="stylesheet" href="css/nav-old.css">
 
-    <title>Home</title>
+    
+
+     <!-- For ICONS  -->
+     <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Profile</title>
     </head>
     <body>
       <!-- Start Wrapper -->
       <div id="wrapper">
 
-          <!-- Start Header -->
+          <!-- Start Header OLD ONE -->
           <header id="header">
             <div class="container">
-          
               <nav class="navbar">
-
                 <div class="logo">
                   <img src="img/logo.png" alt="#" class="logo__icon">
                 </div>
-        
                 <form action="#" class="search">
                   <input type="text" class="search__input" placeholder="Search cases">
                   <button class="search__button">
-                    <!-- <i class="fas fa-search search__icon"></i> -->
-                    <ion-icon name="search-outline" class="icon"></ion-icon>
+                    <i data-feather="search" ></i>
                   </button>
                 </form>
-        
                 <div class="user-nav">
                     <div class="user-nav__home">
                      <a href="#" class="home"> Home</a> 
@@ -52,11 +50,9 @@
                       <a href="#" class="not">Notification </a>
                     </div>
                 </div>
-        
                 <div class="user-nav__pic">
                   <img src="img/avatar.png" alt="user photo" class="user-nav__img">
                 </div> 
-             
               </nav>
             </div>
           </header>
@@ -127,6 +123,7 @@
                               <input type="text" class="write__post" placeholder="Write Something...">
                             </div>
                           </div>
+
         
                           <div class="posts-1">
                             <div class="post">
@@ -141,9 +138,9 @@
                               <div class="post-info">
                                 <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, neque vel sequi maxime aliquid reiciendis illo, sapiente iure aliquam quia pariatur eos id, numquam dolorem praesentium cupiditate quo rem nesciunt!</p>
                                 <div class="post-info__pics">
-                                  <img src="img/image 1.png" alt="Photo1" class="post-pics__img1">
-                                  <img src="img/image 2.png" alt="photo2" class="post-pics__img2">
-                                  <img src="img/image 1.png" alt="photo3" class="post-pics__img3">
+                                  <img src="img/user-1.png" alt="Photo1" class="post-pics__img1">
+                                  <img src="img/user-2.png" alt="photo2" class="post-pics__img2">
+                                  <img src="img/user-1.png" alt="photo3" class="post-pics__img3">
                                 </div>
                               </div>
                               <div class="post-details">
@@ -178,9 +175,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <!-- IonIcons -->
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <!-- IonIcons -->
+    <script> feather.replace() </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"> </script>
     </body>
 </html>

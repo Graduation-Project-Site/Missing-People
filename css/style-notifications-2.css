@@ -1,0 +1,44 @@
+/* start Notification */
+.Not-Box{
+    width: 81.1%;
+    margin: 55px auto ;
+    border: 1px solid #9ea2b036;
+    border-radius: 3px;
+}
+.Not-Title{
+    height: 50px;
+    padding: 15px;
+    background: var(--inputs);
+}
+.Not-body {
+
+    height: 60px;
+    padding:15px 0 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Not-body:nth-child(odd){
+    background: #fff;
+}
+.Not-body:nth-child(even){
+    background: #FAFBFC;
+}
+.Not-body.main img {
+    height: 32px;
+    width: 32px;
+    margin-left: 5px;
+}
+.Not-body .main h6{
+    display: inline-block;
+    margin-left: 5px;
+}
+.Not-body .main p{
+    display: inline-block;
+}
+.Not-body .more .feather {
+    width:22.5px;
+    height: 22.5;
+    color: var(--links-color);
+}
+/* End notifications */
