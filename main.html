@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/nav-new.css">
+    <!-- <link rel="stylesheet" href="css/style-design-2.css">
+    <link rel="stylesheet" href="css/style-popup.css"> -->
+
+    <!-- For ICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <title>Home </title>
+
+    </head>
+    <body>
+
+      <div id="wrapper">
+        <!-- Start Header  NEW ONE WITH FILTERS -->
+        <header id="header">
+          <div class="container">
+            <nav class="navbar">
+              <div class="logo">
+                <img src="img/logo.png" alt="#" class="logo__icon">
+              </div>
+              <form action="#" class="search">
+                <div class="search__one">
+                  <div class="search__one-input">
+                    <!-- <div class="icon">
+                      <button class="search__button">
+                        <ion-icon name="search-outline"></ion-icon>
+                      </button> 
+                    </div> -->
+                    <div class="input">
+                      <input type="text" class="search__input" placeholder="Search by keywords">
+                    </div>
+                  </div>
+                  <!-- Start Select -->
+                    <div class="customized-select search__one-select " >
+                      <ul class="default_option">
+                          <li>
+                              <div class="option default">
+                                <p> Location </p>
+                              </div>
+                          </li>
+                      </ul>
+                      <ul class="select_ul">
+                          <li>
+                              <div class="option 1">
+                                <p> Mansoura </p>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="option 2">
+                                <p>Dameitta</p>
+                              </div>  
+                          </li>                         
+                      </ul>
+                    </div>      
+                  <!-- End Select -->
+                  <!-- Start Select -->
+                    <div class="customized-select search__one-select " >
+                      <ul class="default_option">
+                          <li>
+                              <div class="option default">
+                                <p> Gender </p>
+                              </div>
+                          </li>
+                      </ul>
+                      <ul class="select_ul">
+                          <li>
+                              <div class="option 1">
+                                <p> Male</p>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="option 2">
+                                <p>Female</p>
+                              </div>  
+                          </li>                         
+                      </ul>
+                    </div>      
+                  <!-- End Select -->
+                </div>
+                <div class="search__two">
+                  <button class="search__button-blue"> Search </button>
+                </div>
+              </form>
+              <!-- START USER NAV -->
+              <div class="user-nav">
+                <!-- HOME -->
+                <div class="user-nav__home">
+                  <a href="index-design-2.html" class="home active"> <ion-icon name="home"></ion-icon> </a> 
+                </div>
+                <!-- MSG -->
+                <div class="user-nav__msg ">
+                  <a href="#" class="msg"> <ion-icon name="mail-outline"></ion-icon></a>
+                  <div class="message-popup  hide  pop">
+                    <div class="message msg-1">
+                      <div class="photo">
+                        <img src="img/avatar.png" alt="">
+                      </div>
+                      <div class="details">
+                        <div class="details-1">
+                          <h4 class="heading-4">Mohamed Ashraf</h3>
+                          <p class="paragraph-2">How are you? </p>
+                        </div>
+                        <div class="details-2">
+                          <span class="paragraph-2">1hr</span>
+                        </div>                 
+                      </div>                     
+                    </div>
+                    <div class="message msg-2 active-1">
+                      <div class="photo">
+                        <img src="img/avatar.png" alt="">
+                      </div>
+                      <div class="details">
+                        <div class="details-1">
+                          <h4 class="heading-4">Mohamed Ashraf</h3>
+                          <p class="paragraph-2">How are you? </p>
+                        </div>
+                        <div class="details-2">
+                          <span class="paragraph-2">1hr</span>
+                        </div>      
+                      </div>                     
+                    </div>
+                    <div class="message msg-3">
+                      <div class="photo">
+                        <img src="img/avatar.png" alt="">
+                      </div>
+                      <div class="details">
+                        <div class="details-1">
+                          <h4 class="heading-4">Mohamed Ashraf</h3>
+                          <p class="paragraph-2">How are you? </p>
+                        </div>
+                        <div class="details-2">
+                          <span class="paragraph-2">1hr</span>
+                        </div>      
+                      </div>                     
+                    </div>
+                    <div class="msg-4">
+                      <div class="view-all">
+                        <a href="index-msg.html"> View all </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- NOTIFICATION -->
+                <div class="user-nav__not ">
+                    <a href="#" class="not"> <ion-icon name="notifications-outline"></ion-icon> </a>
+                  <div class="notification-popup hide pop">
+                    <div class="notification noti-1">
+                      <div class="photo">
+                        <img src="img/avatar.png" alt="">
+                      </div>
+                      <div class="details">
+                          <p class="paragraph-2">
+                            <h4 class="heading-4">Mohamed Ashraf</h4>
+                            Reacted on your post <span class="paragraph-2">1hr ago</span>
+                          </p>
+                      </div>                     
+                    </div>
+                    <div class="notification noti-2 active-1">
+                      <div class="photo">
+                        <img src="img/avatar.png" alt="">
+                      </div>
+                      <div class="details">
+                          <p class="paragraph-2">
+                            <h4 class="heading-4">Mohamed Ashraf</h4>
+                            Reacted on your post <span class="paragraph-2 ">1hr ago</span>
+                          </p>
+                      </div>                     
+                    </div>
+                    <div class="notification noti-3">
+                      <div class="photo">
+                        <img src="img/avatar.png" alt="">
+                      </div>
+                      <div class="details">
+                          <p class="paragraph-2">
+                            <h4 class="heading-4">Mohamed Ashraf</h4>
+                            Reacted on your post <span class="paragraph-2">1hr ago</span>
+                          </p>
+                      </div>                     
+                    </div>
+                    <div class="noti-4">
+                      <div class="view-all">
+                        <a href="index-notifications.html"> View all </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- AVATAR -->
+                <div class="user-nav__pic  ">
+                    <img src="img/avatar.png" alt="user photo" class="user-nav__img">
+                    <div class="avatar-popup hide pop ">
+                      <div class="avatar-popup-button button-1">
+                        <button onclick="window.location.href='index-profile.html'" 
+                         class="btn-for-icon 1" name="Profile">
+                          <div class="avatar-popup-profile ava ">
+                            <div class="icon">
+                              <ion-icon name="person-outline"></ion-icon>
+                            </div>
+                              <div class="text">
+                                <p class="paragraph-1 ">Profile</p>
+                              </div>
+                          </div>
+                          </button>
+                      </div>
+                      <div class="avatar-popup-button button-2 active-1">
+                        <button onclick="window.location.href='index-setting.html'" class="btn-for-icon" name="setting">
+                          <div class="avatar-popup-setting ava">
+                              <div class="icon">
+                                <ion-icon name="settings-outline"></ion-icon>
+                              </div>
+                              <div class="text">
+                                <p class="paragraph-1">Setting</p>
+                              </div>
+                          </div>
+                       </button>
+                      </div>
+                      <div class="avatar-popup-button button-3">
+                        <button class="btn-for-icon " name="log-out">
+                          <div class="avatar-popup-log-out ava">
+                            <div class="icon">
+                              <ion-icon name="log-out-outline"></ion-icon>
+                            </div>
+                            <div class="text">
+                              <p class="paragraph-1">Log out</p>
+                            </div>
+                          </div>
+                        </button>
+                      </div>  
+                   </div>
+                </div> 
+              </div>
+              <!-- START USER NAV -->
+            </nav>
+          </div>
+        </header>
+        <!-- End header -->
+      </div>
+    <!-- End Wrapper -->
+
+    <!-- Start base 2 -->
+    <section class="base-2">
+      <div class="container">
+        <div class="base-2-main">
+          <!-- Case Found  -->
+          <div class="cases-found">
+            <h3 class="heading-3">Cases Succsesfully Found</h3>
+            <!-- 1 --> 
+            <div class=" box hide box-base">
+              <div class="box-img">
+                <img src="img/found-1.png" alt="photo-1">
+              </div>
+              <div class="box-content">
+                <!-- <div class="title"> -->
+                  <h6 class="heading-6"> Muhammad Ashraf </h6>
+                <!-- </div> -->
+                <!-- <div class="age"> -->
+                  <p class="paragraph-2"> <span>Age : </span>22 years Old</p>
+                <!-- </div> -->
+                <!-- <div class="gender"> -->
+                  <p class="paragraph-2"><span>Gender : </span> Male</p>
+                <!-- </div> -->
+                <!-- <div class="date"> -->
+                  <p class="paragraph-2"> <span>Founded In : </span>1/5/2020</p>
+                <!-- </div> -->
+                <!-- <div class="place"> -->
+                  <p class="paragraph-2"> <span>Founded At : </span>Giza Station</p>
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="cases-found-list">
+              <img src="img/1.png" alt="found photo" class="cases-found__img-1">
+              <img src="img/2.png" alt="found photo" class="cases-found__img-2">
+              <img src="img/3.png" alt="found photo" class="cases-found__img-3">
+              <img src="img/4.png" alt="found photo" class="cases-found__img-4">
+              <img src="img/5.png" alt="found photo" class="cases-found__img-5">
+              <img src="img/6.png" alt="found photo" class="cases-found__img-6">
+              <img src="img/7.png" alt="found photo" class="cases-found__img-7">
+              <img src="img/8.png" alt="found photo" class="cases-found__img-8">
+              <img src="img/9.png" alt="found photo" class="cases-found__img-9">
+              <img src="img/2.png" alt="found photo" class="cases-found__img-10">
+              <img src="img/7.png" alt="found photo" class="cases-found__img-1">
+              <img src="img/2.png" alt="found photo" class="cases-found__img-2">
+              <img src="img/3.png" alt="found photo" class="cases-found__img-3">
+              <img src="img/4.png" alt="found photo" class="cases-found__img-4">
+              <img src="img/5.png" alt="found photo" class="cases-found__img-5">
+              <img src="img/6.png" alt="found photo" class="cases-found__img-6">
+            </div>
+            <a href="index-cases-2.html" class="case case-base">View all cases </a>
+
+            <h3 class="heading-3">Recent Searches</h3>
+            <div class="cases-found__links">
+              <a href="#" class="case">Mohamed Elbaz</a>
+              <a href="#" class="case">Ahraf</a>
+              <a href="#" class="case">kordy</a>
+            </div>
+          </div>
+
+
+          <!-- Posts -->
+          <section class="posts">
+
+            <div class="base">
+              <div class="container">
+                <div class="base-post">
+                  <div class="post-case">
+                    <div class="heading">
+                      <button class="btn-click">
+                        <h3 class="heading-3">
+                            Post a case 
+                          </h3>
+                    </button>
+                    </div>
+                    <div class="write">
+                      <img src="img/avatar.png" alt="post photo" class="write__img">
+                      <input type="text" class="write__post" placeholder="Write Something...">
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+
+             <!-- Start PopUp -->
+              <div class="popup ">
+                <div class="popup__content">
+                    <div class="post-case-popup">
+                        <div class="post-case-popup-heading">
+                            <div class="title">
+                                <h3 class="heading-3">
+                                    Post a case 
+                                </h3>
+                            </div>
+                            <div class="exit">
+                                <button class="btn-for-icon">
+                                  <ion-icon name="close-outline"></ion-icon>                                
+                                </button>
+                            </div>
+                        </div>
+                        <div class="post-case-popup-write">
+                            <img src="img/avatar.png" alt="post photo" class="post-case-popup-write-img">
+                            <div class="space"></div>
+                            <textarea name="post" id="post" cols="100" rows="10"       class="post-case-popup-write-input" >Write Something...
+                            </textarea>
+                            <!-- <input type="text" class="post-case-popup-write-input" placeholder="Write Something..."> -->
+                        </div>
+                    </div>
+                    <div class="case-info">
+                        <div class="case-info-title">
+                            <h3 class="heading-3">
+                                Case Info
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="case-info-type">
+                        <div class="case-info-type-filter">
+                            <!-- STAET RADIO -->
+                            <div class="filters-base-gender">
+                                <h3 class="heading-3">Gender</h3>
+                                <div class="customize-radio">
+                                    <div class="form-radio-group">
+                                        <input type="radio" class="form-radio-input" id="option-1" name="gender">
+                                        <label for="option-1" class="form-radio-label">
+                                            <span class="form-radio-button"></span>
+                                            <p style="margin: 0 0 0 10px "> Male </p>
+                                          </label>
+                                    </div>
+                                    <div class="space"></div>
+                                    <div class="form-radio-group">
+                                        <input type="radio" class="form-radio-input" id="option-2" name="gender">
+                                        <label for="option-2" class="form-radio-label">
+                                            <span class="form-radio-button"></span>
+                                            <p style="margin: 0 0 0 10px "> Female  </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- End RADIO -->
+                        </div>
+                    </div> 
+                    <div class="case-info-name">
+                        <div class="first-name">
+                            <h3 class="heading-3"> First name</h3>
+                            <input type="name" class="first-name-value inputs"  placeholder="ex:Amal">
+                        </div>
+                        <div class="last-name">
+                            <h3 class="heading-3"> Last name</h3>
+                            <input type="name" class="last-name-value inputs"  placeholder="ex:Salah">
+                        </div>
+                    </div>
+
+                    <div class="case-info-details">
+                        <div class="case-info-details-age">
+                            <h3 class="heading-3"> Age</h3>
+                            <!-- Start Select -->
+                            <div class="customized-select search__one-select " >
+                                <ul class="default_option">
+                                    <li>
+                                        <div class=" option default">
+                                        <p> Select  a year</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="select_ul">
+                                    <li>
+                                        <div class="option 1">
+                                        <p> 10</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="option 2">
+                                        <p>20</p>
+                                        </div>  
+                                    </li>                         
+                                </ul>
+                            </div>      
+                            <!-- End Select -->
+                        </div>
+                        <div class="case-info-details-gender">
+                            <h3 class="heading-3"> Gender</h3>
+                            <!-- Start Select -->
+                            <div class="customized-select search__one-select " >
+                                <ul class="default_option">
+                                    <li>
+                                        <div class="option default">
+                                        <p> select a type </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="select_ul">
+                                    <li>
+                                        <div class="option 1">
+                                        <p> Male </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="option 2">
+                                        <p>Female</p>
+                                        </div>  
+                                    </li>                         
+                                </ul>
+                            </div>      
+                            <!-- End Select -->
+                        </div>
+                    </div>
+                              
+                    <div class="case-info-image">
+                        <div class="case-info-image-title">
+                            <h3 class="heading-3">
+                                place an image
+                            </h3>
+                        </div>
+                        <div class="case-info-image-uplode">
+                            <form class="box" method="post" action="" enctype="multipart/form-data">
+                                <div class="box__input">
+                                <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+                                <br>
+                                <!-- <label for="file"><strong style="color: #818F99;">Choose a file</strong><span class="box__dragndrop"> or drag it here</span>.</label> -->
+                                <!-- <button class="box__button" type="submit">Upload</button> -->
+                                </div>
+                                <!-- <div class="box__uploading">Uploading&hellip;</div>
+                                <div class="box__success">Done!</div>
+                                <div class="box__error">Error! <span></span>.</div> -->
+                                <!-- https://css-tricks.com/drag-and-drop-file-uploading/ -->
+                            </form>
+                        </div>
+                        <button class="btn-blue">
+                            Post
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- End PopUp -->
+
+            <!-- POSTS -->
+            <div class="posts-1">
+              <div class="post">
+                <div class="post-nav">
+                  <img src="img/avatar.png" alt="poster's photo" class="post-nav__imh">
+                  <div class="post-nav__info">
+                    <h3 class="heading-3">Mohamed Ashraf</h4>
+                    <span> 3 hours ago</span>
+                  </div> 
+                  <button class="post-nav-btn btn-for-icons " name="one">
+                    <ion-icon name="ellipsis-vertical-sharp"></ion-icon>
+                    <div class="post-nav-btn-pop post-1 hide " >
+                      <div class="base get">
+                        <div class="icon">
+                          <ion-icon name="notifications-outline"></ion-icon>
+                        </div>
+                        <div class="text">  
+                          <p class="paragraph-1">Get notification</p>
+                        </div>
+                      </div>
+                      <div class="base delete">
+                        <div class="icon">
+                          <ion-icon name="trash-outline"></ion-icon>
+                        </div>
+                        <div class="text">
+                          <p class="paragraph-1">Hide this case</p>
+                        </div>
+                      </div>
+                      <div class="base report">
+                        <div class="icon">
+                          <ion-icon name="flag-outline"></ion-icon>
+                        </div>
+                        <div class="text">
+                          <p class="paragraph-1">Report this case</p>
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div class="post-info">
+                  <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, neque vel sequi maxime aliquid reiciendis illo, sapiente iure aliquam quia pariatur eos id, numquam dolorem praesentium cupiditate quo rem nesciunt!</p>
+                  <div class="post-info__pics">
+                    <img src="img/user.png" alt="Photo1" class="post-pics__img1">
+                    <img src="img/user.png" alt="photo2" class="post-pics__img2">
+                    <img src="img/user.png" alt="photo3" class="post-pics__img3">
+                  </div>
+                </div>
+                <div class="post-details">
+                  <div class="post-details__name">
+                    <h3 class="heading-3">Case Name</h3>
+                    <span class="name">Elkordy</span>
+                  </div>
+                  <div class="post-details__age">
+                    <h3 class="heading-3">Age</h3>
+                    <span class="age">22 years</span>
+                  </div>
+                  <div class="post-details__gender">
+                    <h3 class="heading-3">Gender</h3>
+                    <span class="gender">Male</span>
+                  </div>
+                  <button class="post-details__btn" name="one" >Take Action</button>
+                  <div class="post-details__btn-pop hide">
+                    <div class="  base message ">
+                      <div class="text">
+                        <p class="paragraph-1"> Send a message </p>
+                      </div>
+                      <div class="icon">
+                        <ion-icon name="send-outline"></ion-icon>
+                      </div>
+                    </div>
+                    <div class=" base notification active-1">
+                      <div class="text">
+                        <p class="paragraph-1"> Send a notification</p>
+                      </div>
+                      <div class="icon">
+                        <ion-icon name="arrow-redo-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="posts-2">
+              <div class="post">
+                <div class="post-nav">
+                  <img src="img/avatar.png" alt="poster's photo" class="post-nav__imh">
+                  <div class="post-nav__info">
+                    <h3 class="heading-3">Mohamed Ashraf</h4>
+                    <span> 3 hours ago</span>
+                  </div> 
+                  <button class="post-nav-btn" name="two">
+                    <div class="post-nav-btn-pop post-2 hide">
+                      <div class="base get">
+                        <div class="icon">
+                          <ion-icon name="notifications-outline"></ion-icon>
+                        </div>
+                        <div class="text">  
+                          <p class="paragraph-1">Get notification</p>
+                        </div>
+                      </div>
+                      <div class="base delete">
+                        <div class="icon">
+                          <ion-icon name="trash-outline"></ion-icon>
+                        </div>
+                        <div class="text">
+                          <p class="paragraph-1">Hide this case</p>
+                        </div>
+                      </div>
+                      <div class="base report">
+                        <div class="icon">
+                          <ion-icon name="flag-outline"></ion-icon>
+                        </div>
+                        <div class="text">
+                          <p class="paragraph-1">Report this case</p>
+                        </div>
+                      </div>
+                    </div>
+                    <ion-icon name="ellipsis-vertical-sharp"></ion-icon>
+                  </button>
+                </div>
+                <div class="post-info">
+                  <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, neque vel sequi maxime aliquid reiciendis illo, sapiente iure aliquam quia pariatur eos id, numquam dolorem praesentium cupiditate quo rem nesciunt!</p>
+                  <div class="post-info__pics">
+                    <img src="img/user.png" alt="Photo1" class="post-pics__img1">
+                    <img src="img/user.png" alt="photo2" class="post-pics__img2">
+                    <img src="img/user.png" alt="photo3" class="post-pics__img3">
+                  </div>
+                </div>
+                <div class="post-details">
+                  <div class="post-details__name">
+                    <h3 class="heading-3">Case Name</h3>
+                    <span class="name">Elkordy</span>
+                  </div>
+                  <div class="post-details__age">
+                    <h3 class="heading-3">Age</h3>
+                    <span class="age">22 years</span>
+                  </div>
+                  <div class="post-details__gender">
+                    <h3 class="heading-3">Gender</h3>
+                    <span class="gender">Male</span>
+                  </div>
+                  <button class="post-details__btn" name="two" >Take Action</button>
+                  <div class="post-details__btn-pop hide">
+                    <div class="  base message ">
+                      <div class="text">
+                        <p class="paragraph-1"> Send a message </p>
+                      </div>
+                      <div class="icon">
+                        <ion-icon name="send-outline"></ion-icon>
+                      </div>
+                    </div>
+                    <div class=" base notification active-1">
+                      <div class="text">
+                        <p class="paragraph-1"> Send a notification</p>
+                      </div>
+                      <div class="icon">
+                        <ion-icon name="arrow-redo-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="posts-3">
+              <div class="post">
+                <div class="post-nav">
+                  <img src="img/avatar.png" alt="poster's photo" class="post-nav__imh">
+                  <div class="post-nav__info">
+                    <h3 class="heading-3">Mohamed Ashraf</h4>
+                    <span> 3 hours ago</span>
+                  </div> 
+                  <button class="post-nav-btn" name="three">
+                    <ion-icon name="ellipsis-vertical-sharp"></ion-icon>
+                    <div class="post-nav-btn-pop post-3 hide">
+                      <div class="base get">
+                        <div class="icon">
+                          <ion-icon name="notifications-outline"></ion-icon>
+                        </div>
+                        <div class="text">  
+                          <p class="paragraph-1">Get notification</p>
+                        </div>
+                      </div>
+                      <div class=" base delete active-1">
+                        <div class="icon">
+                          <ion-icon name="trash-outline"></ion-icon>
+                        </div>
+                        <div class="text">
+                          <p class="paragraph-1">Hide this case</p>
+                        </div>
+                      </div>
+                      <div class=" base report">
+                        <div class="icon">
+                          <ion-icon name="flag-outline"></ion-icon>
+                        </div>
+                        <div class="text">
+                          <p class="paragraph-1">Report this case</p>
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div class="post-info">
+                  <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, neque vel sequi maxime aliquid reiciendis illo, sapiente iure aliquam quia pariatur eos id, numquam dolorem praesentium cupiditate quo rem nesciunt!</p>
+                  <div class="post-info__pics">
+                    <img src="img/user.png" alt="Photo1" class="post-pics__img1">
+                    <img src="img/user.png" alt="photo2" class="post-pics__img2">
+                    <img src="img/user.png" alt="photo3" class="post-pics__img3">
+                  </div>
+                </div>
+                <div class="post-details">
+                  <div class="post-details__name">
+                    <h3 class="heading-3">Case Name</h3>
+                    <span class="name">Elkordy</span>
+                  </div>
+                  <div class="post-details__age">
+                    <h3 class="heading-3">Age</h3>
+                    <span class="age">22 years</span>
+                  </div>
+                  <div class="post-details__gender">
+                    <h3 class="heading-3">Gender</h3>
+                    <span class="gender">Male</span>
+                  </div>
+                  <button class="post-details__btn" name="three">Take Action</button>
+                  <div class="post-details__btn-pop hide">
+                    <div class="  base message ">
+                      <div class="text">
+                        <p class="paragraph-1"> Send a message </p>
+                      </div>
+                      <div class="icon">
+                        <ion-icon name="send-outline"></ion-icon>
+                      </div>
+                    </div>
+                    <div class=" base notification ">
+                      <div class="text">
+                        <p class="paragraph-1"> Send a notification</p>
+                      </div>
+                      <div class="icon">
+                        <ion-icon name="arrow-redo-outline"></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+  
+          <!-- Filters -->
+          <div class="filters">
+            <div class="filters-base">
+              <h3 class="heading-3">Filter Results</h3>
+              <button class="filters-base__btn">Apply Filter</button>
+            </div>
+            <div class="filters-base-age">
+              <h3 class="heading-3">Age</h3>
+              <!-- Start Select -->
+                <div class="customized-select">
+                  <ul class="default_option">
+                      <li>
+                          <div class="option default">
+                            <p> 5-7 years </p>
+                          </div>
+                      </li>
+                  </ul>
+                  <ul class="select_ul">
+                      <li>
+                          <div class="option 1">
+                            <p> 10</p>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="option 2">
+                            <p>20</p>
+                          </div>  
+                      </li>
+                  </ul>
+              </div>      
+             <!-- End Select -->
+            </div>
+            <div class="filters-base-date">
+              <h3 class="heading-3">Date</h3>
+              <!-- Start Select -->
+              <div class="customized-select">
+                <ul class="default_option">
+                    <li>
+                        <div class="option default">
+                          <p> Most Recent</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="select_ul">
+                    <li>
+                        <div class="option 1">
+                          <p> 10</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option 2">
+                          <p>20</p>
+                        </div>  
+                    </li>
+                </ul>
+            </div>      
+           <!-- End Select -->
+            </div>
+            <div class="filters-base-loc">
+              <h3 class="heading-3">Location</h3>
+              <!-- Start Select -->
+              <div class="customized-select">
+                <ul class="default_option">
+                    <li>
+                        <div class="option default">
+                          <p> Location </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="select_ul">
+                    <li>
+                        <div class="option 1">
+                          <p> Mansoura </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="option 2">
+                          <p>Dameitta</p>
+                        </div>  
+                    </li>
+                </ul>
+            </div>      
+           <!-- End Select -->
+            </div>
+            <!-- STAET RADIO -->
+            <div class="filters-base-gender">
+              <h3 class="heading-3">Gender</h3>
+              <div class="customize-radio">
+                <div class="form-radio-group">
+                    <input type="radio" class="form-radio-input" id="option 1" name="the comparing thing">
+                    <label for="option 1" class="form-radio-label">
+                         <span class="form-radio-button"></span>
+                         <p style="margin: 0 0 0 10px "> Male </p>
+                      </label>
+                </div>
+                <div class="form-radio-group">
+                    <input type="radio" class="form-radio-input" id="option 2" name="the comparing thing">
+                    <label for="option 2" class="form-radio-label">
+                         <span class="form-radio-button"></span>
+                         <p style="margin: 0 0 0 10px "> Female  </p>
+                     </label>
+                </div>
+             </div>
+            </div> 
+            <!-- End RADIO -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End base 2 -->
+
+   
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"> </script>
+    </body>
+</html>
