@@ -1,7 +1,7 @@
 /* Colors */
 :root {
     --background: #FAFAFA;
-    --inputs: #F5F6F7;
+    --inputs-bg: #F5F6F7;
     --text-color: #24292D;
     --links-color: #818F99;
     --brand-color: #1271A6;
@@ -100,6 +100,11 @@ h1,h2,h3,h4,h5,button {
     padding: 10px 13px ;
     width:100% ;
 }
+
+input::placeholder {
+    color: var(--links-color) !important;
+}
+
 .hide {
     display: none;
 }
@@ -149,9 +154,7 @@ header {
     margin: 7px 0;
     border-right: 1px solid  #EDEDED;
 }
-.search__input::placeholder {
-    color: #818F99;
-}
+
 .search__one-input {
     flex-grow: 1; }
 /* .search__one-input {
@@ -956,22 +959,25 @@ header {
 .form-radio-button {
     height: 20px;
     width: 20px;
-    border: 2.5px solid #5D666D;
+    border: 1.2px solid #5D666D;
     border-radius: 50%;
     display: inline-block;
+    position: relative;
 }
 .form-radio-button::after {
     content: "";
     display: block;
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 12px;
     border-radius: 50%;
     position: absolute;
-    top: 27%;
-    left: 5.5px;
+    top: 50%;
+    left: 50%;
     background-color: #5D666D;
     opacity:0;
     transition: opacity .2s;
+    margin-top: -6px;
+    margin-left: -6px;
 }
 .form-radio-input:checked ~ .form-radio-label .form-radio-button::after {
     opacity: 1; /*THIS COULD BE WRITEN IN JQUERY IN ONOTHER WAY */
@@ -1058,7 +1064,7 @@ margin-bottom: 10px;
 .setting-box .Set-Title{
     height: 50px;
     padding: 10px 15px;
-    background: var(--inputs);
+    background: var(--inputs-bg);
 }
 .setting-box .set-body{
   background: #fff;
@@ -1159,7 +1165,7 @@ margin-bottom: 10px;
     height: 40px;
 }
 .input-group input{
-  background: var(--inputs);
+  background: var(--inputs-bg);
   border: none;
 
 }
@@ -1272,7 +1278,7 @@ margin-bottom: 10px;
 .Not-Title{
     height: 50px;
     padding: 15px;
-    background: var(--inputs);
+    background: var(--inputs-bg);
 }
 .Not-body {
     height: 60px;
@@ -1547,7 +1553,141 @@ margin-bottom: 10px;
 }
 /* End Messages */
 
+/* Start Register */
+#register {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#register .register_wrapper {
+    width: 350px;
+    margin: auto;
+    background-color: #FFF;
+    border-radius: 3px;
+    border: 1.2px solid #EDEDED;
+    min-height: 500px
+}
+
+#register .register_wrapper .register_head{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#register .register_wrapper .register_head::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #EDEDED;
+}
+
+#register .register_wrapper .register_head .tab{
+    flex-basis: 50%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    color: var(--links-color);
+    cursor: pointer;
+}
+
+#register .register_wrapper .register_head .tab.active {
+    color: var(--brand-color);
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+#register .register_wrapper .register_head .tab.active::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.5px;
+    background-color: var(--brand-color);
+    z-index: 999;
+    transition: all .3s ease-in-out;
+}
+
+#register .register_wrapper .register_body{
+    padding: 40px;
+}
+
+#register .register_wrapper .register_body input{
+    background-color: var(--inputs-bg);
+    border: none;
+    height: 40px;
+}
+
+#register .register_wrapper .register_body .btn{
+    width: 100%;
+    background-color: var(--brand-color);
+    height: 40px;
+}
+
+#register .register_wrapper .register_body .divider{
+    color: var(--links-color);
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+}
+
+#register .register_wrapper .register_body .divider::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    right: 55%;
+    height: 1.2px;
+    background-color: #EDEDED;
+}
+
+#register .register_wrapper .register_body .divider::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 55%;
+    right: 0;
+    height: 1.2px;
+    background-color: #EDEDED;
+}
+
+#register .register_wrapper .register_body .btn-group {
+    display: flex;
+    justify-content: space-between;
+    height: 37px;
+    align-items: center;
+}
+
+#register .register_wrapper .register_body .btn-group .gmail-btn{
+    display: flex;
+    justify-content: space-around;
+    border: 1.2px solid #EDEDED;
+    border-radius: 3px;
+    height: 37px;
+    flex-grow: 1;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#register .register_wrapper .register_body .btn-group .facebook-btn{
+    width: 37px;
+    height: 37px;
+    background-color: var(--inputs-bg);
+    border-radius: 3px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
 
 
+/* End Register */
 
 

@@ -248,7 +248,18 @@ $(function () {
             console.log("vf")
         )
     });
+
+    // Register toggle tabs
+    $('#register .tab').each(function() {
+        $(this).click(function() {
+            //toggle between tabs
+            if ($(this).hasClass('active') === false) {$(this).addClass('active').siblings().removeClass('active')}
+            // toggle signup/login form
+            $(`.${$(this).attr('data-form')}`).removeClass('hide').siblings('form').addClass('hide')
+        })
+    })
 });
+
 var reset = function(){
     $('.avatar-popup .avatar-popup-profile .icon ion-icon').attr("name","person-outline");
     $('.avatar-popup .avatar-popup-setting .icon ion-icon').attr("name","settings-outline");
